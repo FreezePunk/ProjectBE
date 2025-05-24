@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Sélection des modèles | Projet BE</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .main_selection_section {
+      background: #fff;
+      max-width: 950px;
+      margin: 50px auto 40px auto;
+      border-radius: 22px;
+      box-shadow: 0 6px 32px rgba(40,50,100,0.11);
+      padding: 40px 36px 36px 36px;
+      position: relative;
+    }
+    .step-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 54px;
+    }
+    .step-link {
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1.09rem;
+      border-radius: 9px;
+      padding: 7px 19px;
+      text-decoration: none;
+      transition: background 0.15s;
+      box-shadow: 0 2px 8px rgba(100,110,220,0.07);
+      letter-spacing: 0.02em;
+      border: none;
+      text-align: center;
+    }
+    .step-next {
+      background: #5c7cfa;
+      color: #fff;
+      min-width: 175px;
+    }
+    .step-next:hover {
+      background: #2a43b6;
+      color: #fff;
+    }
+    .step-prev {
+      background: #fff;
+      color: #5c7cfa;
+      border: 2px solid #5c7cfa;
+      min-width: 120px; /* Augmenté */
+      font-size: 0.98rem;
+      padding: 6px 17px; /* Un peu plus de padding */
+    }
+    .step-prev:hover {
+      background: #e9f0ff;
+      color: #2a43b6;
+      border-color: #2a43b6;
+    }
+    .main_selection_section h1 {
+      text-align: center;
+      color: #222a4d;
+      font-size: 2.3rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .main_selection_section h2 {
+      font-size: 1.45rem;
+      color: #3b3990;
+      margin-top: 32px;
+      font-weight: 600;
+    }
+    .main_selection_section p, .main_selection_section ul {
+      font-size: 1.13rem;
+      margin-top: 18px;
+      color: #2e2e2e;
+      line-height: 1.7;
+    }
+    .model-list {
+      margin: 24px 0;
+      padding-left: 24px;
+      font-size: 1.08rem;
+    }
+    .model-list li {
+      margin-bottom: 7px;
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      color: #3b3990;
+      font-weight: 500;
+      background: #f4f6fd;
+      border-radius: 6px;
+      display: inline-block;
+      padding: 3px 13px;
+    }
+    .callout {
+      background: #f4f6fd;
+      border-left: 4px solid #597cf1;
+      padding: 16px 24px;
+      margin: 30px 0;
+      border-radius: 12px;
+      color: #23345b;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
+      .main_selection_section { padding: 14px 4vw; }
+      .main_selection_section h1 { font-size: 1.4rem; }
+      .step-links { flex-direction: column; gap: 14px; }
+      .step-link, .step-prev, .step-next { width: 100%; min-width: 0 !important; }
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Projet BE
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Autres</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- Sélection des modèles content section -->
+  <section class="main_selection_section">
+    <div class="step-links">
+      <a class="step-link step-prev" href="collecte.html">← Étape précédente</a>
+      <a class="step-link step-next" href="performance.html">Étape suivante →</a>
+    </div>
+    <h1>Sélection des modèles&nbsp;: Trouver la bonne IA</h1>
+    <div class="callout">
+      <strong>Tous les modèles testés ont été récupérés sur <a href="https://huggingface.co/" target="_blank" style="color:#425bb4;">HuggingFace</a>, la plateforme de référence pour l’IA open-source.</strong>
+    </div>
+    <p>
+      Les modèles que nous avons testés via Google Colab ont tous été pris sur HuggingFace. HuggingFace est une ressource en ligne qui met en public un grand nombre de modèles de prédiction et de données associés dans divers domaines, et notamment les modèles de langage qui nous intéressent ici pour créer un chatbot.
+    </p>
+    <p>
+      Sous les conseils de notre encadrant, nous avons choisi de prendre des modèles Llama, Mistral et Deepseek, plusieurs de leurs différentes versions, ainsi que des versions Instruct (donc déjà fine-tunées par d'autres utilisateurs).
+    </p>
+    <h2>Pourquoi ces modèles ?</h2>
+    <p>
+      Pour pouvoir tester les différents modèles, nous avons choisi de sélectionner les modèles les plus petits. Les tailles varient entre un milliard et sept milliards de paramètres.
+    </p>
+    <h2>Liste des modèles testés</h2>
+    <ul class="model-list">
+      <li>MistralModel-7B-Instruct-v01</li>
+      <li>Mistral_v03_7B</li>
+      <li>Llama3B</li>
+      <li>LLama1B</li>
+      <li>DeepseekLLama3B</li>
+      <li>Deepseek_R1_5B</li>
+    </ul>
+    <div class="callout">
+      <b>Le choix du modèle dépend de la taille, de la puissance disponible, et du type de tâche à résoudre.</b>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2020 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+
+</html>

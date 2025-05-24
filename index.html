@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Projet BE</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Projet BE
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#who">Contexte</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#etape">Etapes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#encadrant">Membres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Autres</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+<section class="slider_section position-relative">
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="row">
+          <div class="col">
+            <div class="detail-box" style="padding-top: 48px;">
+              <div>
+                <h2 style="font-size: 2.2rem; color:#fff; font-weight:bold; margin-bottom:12px;">
+                  Intelligence Artificielle pour les échecs
+                </h2>
+                <h1 style="font-size: 1.2rem; color: #fff; font-weight: 400;">
+                  entraîner un Large Language Model (LLM) à jouer aux échecs                     
+                </h1>
+                <!-- Le bouton "En savoir plus" a été supprimé -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+
+  <!-- who section -->
+
+  <section class="who_section " id="who">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="img-box">
+            <img src="images/echecrobot.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                DESCRIPTION DU PROJET
+              </h2>
+            </div>
+            <p>
+              L’intelligence artificielle a connu un grand saut en avant avec l’arrivée des grands modèles de langage (LLMs). Ces modèles sont appris de manière non supervisée avec des quantités énormes de textes provenant du web. Les modèles génératifs qui en ont découlés ont permis de créer des outils comme chatGPT et de nombreux autres chat-bots. Ces modèles sont très performant pour générer, résumer, traduire des textes mais peuvent halluciner et ne sont pas capable de faire des calculs basiques.
+
+Le but de ce projet est d'utiliser un LLM pré-entrainé et de l’affiner (fine-tuning) sur des données provenant de parties d'échecs pour voir s’il est capable d’apprendre à jouer aux échecs à partir seulement de données textuelles et sans avoir un modèle du jeux.
+
+Les IA classiques d'échecs sont basées sur l’apprentissage par renforcement. Suivant les avancées du projet nous pourrons chercher à comparer les performances de ces deux types d’approches.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end who section -->
+
+  <!-- do section -->
+
+  <section class="do_section layout_padding" id="etape">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Ce qu'on a réalisé
+        </h2>
+        <p>
+Il est possible de cliquer sur l'une des étapes pour découvrir plus de détail la concernant.
+        </p>
+      </div>
+      <div class="do_container">
+        <a href="collecte.html" style="text-decoration:none; color:inherit;">
+        <div class="box arrow-start arrow_bg">
+          <div class="img-box">
+            <img src="images/d-1.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Collecte et préparation des données
+            </h6>
+          </div>
+        </div>
+        </a>
+        <a href="selection.html" style="text-decoration:none; color:inherit;">
+        <div class="box arrow-middle arrow_bg">
+          <div class="img-box">
+            <img src="images/d-2.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Sélection des modèles 
+            </h6>
+          </div>
+        </div>
+        </a>
+        <a href="finetuning.html" style="text-decoration:none; color:inherit;">
+        <div class="box arrow-middle arrow_bg">
+          <div class="img-box">
+            <img src="images/d-3.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Entraînement du modèle (Fine-tuning)
+            </h6>
+          </div>
+        </div>
+        </a>
+        <a href="performance.html" style="text-decoration:none; color:inherit;">
+        <div class="box arrow-end arrow_bg">
+          <div class="img-box">
+            <img src="images/d-4.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Évaluation des performances
+            </h6>
+          </div>
+        </div>
+        </a>
+        <a href="diffusion.html" style="text-decoration:none; color:inherit;">
+        <div class="box ">
+          <div class="img-box">
+            <img src="images/d-5.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Diffusion des résultats
+            </h6>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end do section -->
+
+  <!-- NOTRE encadrant -->
+<section class="encadrant_section" id="encadrant">
+  <div class="container">
+    <div class="heading_container" style="text-align: center; margin-bottom: 32px;">
+      <h2>
+        NOTRE ENCADRANT
+      </h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-5 col-lg-4">
+        <div class="box" style="text-align:center; background:#fff; border-radius:0; box-shadow:0 4px 24px rgba(40,50,100,0.07); padding:34px 18px; min-height: 265px; display:flex; flex-direction:column; justify-content:center;">
+          <div class="detail-box">
+            <h5 style="font-weight:700; letter-spacing:1px; margin-bottom:15px;">
+              RONAN SICRE
+            </h5>
+            <p>
+              Professeur assistant à l’École Centrale de Marseille et chercheur<br>
+              au sein de l’équipe QARMA du laboratoire LIS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- end client section -->
+
+  <!-- NOTRE GROUPE -->
+  <section class="client_section">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          NOTRE GROUPE
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <h5>
+                  BEN AOUN Mohamed <br>
+                  <span>
+                    Etudiant en L3 Informatique
+                  </span>
+                </h5>
+                <p>
+                  Mohamed a pris en charge la définition des critères d'évaluation des chatbots et l'évaluation des performances, tout en contribuant activement à l'entraînement du modèle et à la formalisation des résultats.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <h5>
+                  NJEGOVAN Andjelka <br>
+                  <span>
+                    Etudiante en L3 Informatique
+                  </span>
+                </h5>
+                <p>
+                  Andjelka s'est concentrée sur la recherche et l'évaluation des chatbots, notamment l'exploration des modèles HuggingFace et la formation sur Pytorch, en plus de s'occuper de l'entraînement du modèle et du fine-tuning.                 </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <h5>
+                  VOISON Christopher <br>
+                  <span>
+                    Etudiant en L3 Informatique
+                  </span>
+                </h5>
+                <p>
+                  Christopher a principalement supervisé la préparation et la classification des problèmes d'échecs, ainsi que la gestion du planning et des tâches, en veillant à ce que tout le monde reste aligné sur les objectifs.                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- target section -->
+<section class="target_section layout_padding2">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-2 col-sm-6">
+        <div class="detail-box">
+          <h2>200+</h2>
+          <h5>Problèmes d’échecs testés</h5>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="detail-box">
+          <h2>6</h2>
+          <h5>Modèles LLM comparés</h5>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="detail-box">
+          <h2>4</h2>
+          <h5>Langages IA évalués</h5>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <div class="detail-box">
+          <h2>3</h2>
+          <h5>Librairies Python principales</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- end target section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h5>
+              Nous contacter
+            </h5>
+            <div>
+              <p>
+                christopher.voisin@univ-tlse3.fr
+              </p>
+              <p>
+                mohamed.ben-aoun@univ-tlse3.fr
+              </p>
+              <p>
+                andjelka.njegovan@univ-tlse3.fr
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- owl carousel script  -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: { items: 1 },
+        1000: { items: 3 }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+
+</body>
+
+</html>

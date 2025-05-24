@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Fine-tuning | Projet BE</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .main_finetuning_section {
+      background: #fff;
+      max-width: 950px;
+      margin: 50px auto 40px auto;
+      border-radius: 22px;
+      box-shadow: 0 6px 32px rgba(40,50,100,0.11);
+      padding: 40px 36px 36px 36px;
+      position: relative;
+    }
+    .step-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 54px;
+    }
+    .step-link {
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1.09rem;
+      border-radius: 9px;
+      padding: 7px 19px;
+      text-decoration: none;
+      transition: background 0.15s;
+      box-shadow: 0 2px 8px rgba(100,110,220,0.07);
+      letter-spacing: 0.02em;
+      border: none;
+      text-align: center;
+    }
+    .step-next {
+      background: #5c7cfa;
+      color: #fff;
+      min-width: 175px;
+    }
+    .step-next:hover {
+      background: #2a43b6;
+      color: #fff;
+    }
+    .step-prev {
+      background: #fff;
+      color: #5c7cfa;
+      border: 2px solid #5c7cfa;
+      min-width: 120px;
+      font-size: 0.98rem;
+      padding: 6px 17px;
+    }
+    .step-prev:hover {
+      background: #e9f0ff;
+      color: #2a43b6;
+      border-color: #2a43b6;
+    }
+    .main_finetuning_section h1 {
+      text-align: center;
+      color: #222a4d;
+      font-size: 2.3rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .main_finetuning_section h2 {
+      font-size: 1.5rem;
+      color: #3b3990;
+      margin-top: 32px;
+      font-weight: 600;
+    }
+    .main_finetuning_section p, .main_finetuning_section ul {
+      font-size: 1.13rem;
+      margin-top: 18px;
+      color: #2e2e2e;
+      line-height: 1.7;
+    }
+    .callout {
+      background: #f4f6fd;
+      border-left: 4px solid #597cf1;
+      padding: 16px 24px;
+      margin: 30px 0;
+      border-radius: 12px;
+      color: #23345b;
+      font-style: italic;
+    }
+    .code {
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      background: #f4f4f8;
+      border-radius: 6px;
+      padding: 4px 10px;
+      display: inline-block;
+      font-size: 1rem;
+      color: #4d3d5c;
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+    @media (max-width: 768px) {
+      .main_finetuning_section { padding: 14px 4vw; }
+      .main_finetuning_section h1 { font-size: 1.4rem; }
+      .step-links { flex-direction: column; gap: 14px; }
+      .step-link, .step-prev, .step-next { width: 100%; min-width: 0 !important; }
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Projet BE
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Autres</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- Fine-tuning content section -->
+  <section class="main_finetuning_section">
+    <div class="step-links">
+      <a class="step-link step-prev" href="performance.html">← Étape précédente</a>
+      <a class="step-link step-next" href="diffusion.html">Étape suivante →</a>
+    </div>
+    <h1>Fine-tuning&nbsp;: Expérimenter l'adaptation du modèle</h1>
+    <div class="callout">
+      <strong>Le fine-tuning, c’est ajuster un modèle pré-entraîné pour une tâche spécifique.<br>
+      Ici&nbsp;: apprendre à un LLM à jouer aux échecs avec nos propres données&nbsp;!</strong>
+    </div>
+    <p>
+      Comme nous l’avons précisé dans le contexte initial, au tout début de notre projet, notre encadrant nous a expliqué que selon l'avancée du projet, nous allions peut-être pouvoir essayer d'appliquer un fine-tuning sur un de nos modèles testés pour voir les résultats que cela pourrait donner en comparaison.
+    </p>
+    <p>
+      À ce stade, nous avons réussi à avancer au point où il a été possible de tenter notre fine-tuning.
+    </p>
+    <h2>Qu’est-ce que le fine-tuning&nbsp;?</h2>
+    <p>
+      Le fine-tuning consiste à renforcer, selon des critères précis, un modèle déjà existant en modifiant les poids des réseaux de neurones. C’est précisément ce que nous avons tenté de faire vers la fin de notre projet.
+    </p>
+    <h2>La méthode LoRa&nbsp;: optimiser l’adaptation</h2>
+    <p>
+      Il nous a été conseillé d'utiliser la méthode <strong>LoRa</strong>. Cette méthode est optimale pour notre situation car LoRa ne fine-tune pas tout le modèle mais ajoute de petits modules à certains poids. Ceci nous assure une moindre demande de RAM comparé à un fine-tuning complet.
+    </p>
+    <h2>Préparation des données et premières difficultés</h2>
+    <p>
+      La structure de la base de données a été séparée en « input » et « output ». En pratique, cela signifie que nous avons associé le prompt à l’input et le coup d’échecs optimal en output. Le prompt contenait le FEN de la situation d’échec et la demande de répondre avec le meilleur coup, le résultat dans l’output était au format UCI.
+    </p>
+    <p>
+      À nos premiers tests, le modèle fine-tuné répondait le même texte peu importe notre input. Pire, la réponse était la phrase <strong>« return blood return blood … »</strong> en boucle, sans jamais proposer un coup d’échecs valide : il y avait donc clairement un problème dans l’entraînement.
+    </p>
+    <h2>Nos essais de correction</h2>
+    <ul>
+      <li><strong>Padding et tokens inutiles :</strong> Nous avons réduit et masqué le padding pour que le modèle ne tente pas de prédire des tokens sans intérêt.</li>
+      <li><strong>Simplification du prompt :</strong> Le prompt initial était trop complexe, nous l’avons simplifié par&nbsp;:
+        <div class="code">prompt = "Position: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1. Coup UCI :"</div>
+      </li>
+      <li><strong>Changement de librairie :</strong> Nous avons opté pour <span class="code">default_data_collator</span> au lieu de <span class="code">DataCollatorForLanguageModeling</span> pour mieux gérer l’entraînement supervisé.</li>
+    </ul>
+    <h2>Limites techniques et bilan</h2>
+    <p>
+      Plusieurs problèmes viennent probablement de notre GPU peu performant et du fait que le modèle Llama 1B (1 milliard de paramètres) reste trop petit pour ce type de tâche, surtout avec un jeu de données réduit (moins de 2000 exemples).
+      <br>Chaque tentative d’utiliser plus de données faisait planter la session.
+    </p>
+    <p>
+      Nous avons tenté de baisser la variable <span class="code">lora_alpha</span> à 8 pour consommer moins de mémoire, mais le modèle répondait toujours par des phrases incohérentes.
+    </p>
+    <h2>Conclusion</h2>
+    <p>
+      Malgré toutes nos tentatives, le modèle fine-tuné ne génère pas de coups d’échecs cohérents. C’est frustrant, mais nous avons beaucoup appris sur les limites du fine-tuning avec peu de ressources et sur l’importance des détails dans la préparation des données.
+    </p>
+    <div class="callout">
+      <b>Ce fine-tuning nous a permis de toucher du doigt la réalité du travail sur les LLMs et leurs limites dans un contexte étudiant, avec des ressources limitées.</b>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2020 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+
+</html>

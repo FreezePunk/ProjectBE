@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Évaluation des performances | Projet BE</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .main_performance_section {
+      background: #fff;
+      max-width: 950px;
+      margin: 50px auto 40px auto;
+      border-radius: 22px;
+      box-shadow: 0 6px 32px rgba(40,50,100,0.11);
+      padding: 40px 36px 36px 36px;
+      position: relative;
+    }
+    .step-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 54px;
+    }
+    .step-link {
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1.09rem;
+      border-radius: 9px;
+      padding: 7px 19px;
+      text-decoration: none;
+      transition: background 0.15s;
+      box-shadow: 0 2px 8px rgba(100,110,220,0.07);
+      letter-spacing: 0.02em;
+      border: none;
+      text-align: center;
+    }
+    .step-next {
+      background: #5c7cfa;
+      color: #fff;
+      min-width: 175px;
+    }
+    .step-next:hover {
+      background: #2a43b6;
+      color: #fff;
+    }
+    .step-prev {
+      background: #fff;
+      color: #5c7cfa;
+      border: 2px solid #5c7cfa;
+      min-width: 120px;
+      font-size: 0.98rem;
+      padding: 6px 17px;
+    }
+    .step-prev:hover {
+      background: #e9f0ff;
+      color: #2a43b6;
+      border-color: #2a43b6;
+    }
+    .main_performance_section h1 {
+      text-align: center;
+      color: #222a4d;
+      font-size: 2.3rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .main_performance_section h2 {
+      font-size: 1.45rem;
+      color: #3b3990;
+      margin-top: 32px;
+      font-weight: 600;
+    }
+    .main_performance_section p, .main_performance_section ul {
+      font-size: 1.13rem;
+      margin-top: 18px;
+      color: #2e2e2e;
+      line-height: 1.7;
+    }
+    .callout {
+      background: #f4f6fd;
+      border-left: 4px solid #597cf1;
+      padding: 16px 24px;
+      margin: 30px 0;
+      border-radius: 12px;
+      color: #23345b;
+      font-style: italic;
+    }
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font-size: 1.07rem;
+      background: #fafbfe;
+      box-shadow: 0 2px 12px rgba(40,60,110,0.07);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .results-table th, .results-table td {
+      border: 1px solid #e1e9fa;
+      padding: 12px 10px;
+      text-align: center;
+    }
+    .results-table th {
+      background: #f4f6fd;
+      color: #3b3990;
+      font-weight: 600;
+    }
+    @media (max-width: 768px) {
+      .main_performance_section { padding: 14px 4vw; }
+      .main_performance_section h1 { font-size: 1.4rem; }
+      .step-links { flex-direction: column; gap: 14px; }
+      .step-link, .step-prev, .step-next { width: 100%; min-width: 0 !important; }
+      .results-table { font-size: 0.99rem; }
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Projet BE
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Autres</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- Performance content section -->
+  <section class="main_performance_section">
+    <div class="step-links">
+      <a class="step-link step-prev" href="selection.html">← Étape précédente</a>
+      <a class="step-link step-next" href="finetuning.html">Étape suivante →</a>
+    </div>
+    <h1>Évaluation des performances&nbsp;: Analyse des réponses des modèles</h1>
+    <div class="callout">
+      <b>Évaluer un modèle, c’est mesurer sa capacité à proposer des coups pertinents, à comprendre le jeu… et à ne pas halluciner&nbsp;!</b>
+    </div>
+
+    <h2>Développement d’un script d’évaluation</h2>
+    <p>
+      Pour garantir une analyse équitable et automatisée, un script Python a été conçu afin d’analyser les réponses des chatbots. Celui-ci s’appuie sur la librairie <b>python-chess</b> couplée au moteur <b>Stockfish</b>, référence mondiale en termes d’évaluation de positions. Stockfish analyse la position, anticipe les coups à l’avance (profondeur jusqu’à 15 demi-coups ou plus), et attribue un score en centipions pour juger l’avantage des blancs ou des noirs.
+    </p>
+    <ul>
+      <li><b>Matériel</b> (pièces restantes)</li>
+      <li><b>Sécurité du roi</b></li>
+      <li><b>Contrôle du centre</b></li>
+      <li><b>Mobilité des pièces</b></li>
+      <li><b>Faiblesses structurelles</b> (pions doublés, cases faibles...)</li>
+    </ul>
+    <p>
+      En comparant l’évaluation avant/après le coup proposé par le chatbot, un système de notation (très bien, correct, médiocre, mauvais) a été mis en place. Les coups illégaux ou hors format sont également repérés et comptabilisés.
+    </p>
+
+    <h2>Résultats sur les ouvertures classiques</h2>
+    <p>
+      Deux modèles généralistes, ChatGPT-4o et Le Chat (Mistral), ont été confrontés à des ouvertures classiques (défense sicilienne, italienne, espagnole…). Le score suivant résume la fréquence d’"hallucination" (coup impossible/inventé) :
+    </p>
+    <table class="results-table">
+      <tr>
+        <th>Modèle</th>
+        <th>Moyenne de coups avant hallucination</th>
+        <th>Commentaire</th>
+      </tr>
+      <tr>
+        <td>ChatGPT-4o</td>
+        <td>18</td>
+        <td>Perd vite le fil sur des ouvertures atypiques, coups non optimaux.</td>
+      </tr>
+      <tr>
+        <td>Le Chat (Mistral)</td>
+        <td>6</td>
+        <td>Hallucine plus tôt, difficulté sur les variantes non standards.</td>
+      </tr>
+    </table>
+    <p>
+      Dans tous les cas, l’avantage restait pour l’humain ou le joueur, rarement pour le LLM.
+    </p>
+
+    <h2>Évaluation théorique&nbsp;: questions de connaissances</h2>
+    <p>
+      Un questionnaire de 13 questions théoriques (roque, règle des 50 coups, prise en passant, etc.) a été soumis à 4 modèles ; le score (notation stricte) :
+    </p>
+    <table class="results-table">
+      <tr>
+        <th>Modèle</th>
+        <th>Score (%)</th>
+        <th>Commentaires</th>
+      </tr>
+      <tr>
+        <td>GPT-4o</td>
+        <td>100%</td>
+        <td>Réponses parfaites.</td>
+      </tr>
+      <tr>
+        <td>Le Chat</td>
+        <td>88%</td>
+        <td>3 réponses incomplètes.</td>
+      </tr>
+      <tr>
+        <td>Claude 3.7</td>
+        <td>92%</td>
+        <td>2 réponses incomplètes.</td>
+      </tr>
+      <tr>
+        <td>Gemini 2.0</td>
+        <td>100%</td>
+        <td>Réponses parfaites.</td>
+      </tr>
+    </table>
+
+    <h2>Avancées grâce à la "chaîne de pensée"</h2>
+    <p>
+      L’utilisation de prompts incitant le raisonnement étape par étape ("chain-of-thought") a nettement amélioré les résultats : un taux de réussite de 84 % sur 10 problèmes complexes avec o3 d’OpenAI, contre un score quasi nul sans cette méthode. 
+    </p>
+
+    <h2>Limites et difficultés techniques</h2>
+    <ul>
+      <li><b>Matériel limité (GPU/RAM)</b> : La taille des modèles et la limitation mémoire de Google Colab ont fortement restreint nos tests sur les gros modèles HuggingFace.</li>
+      <li><b>Réduction des modèles</b> : Réduire la taille des modèles dégrade considérablement leur capacité à générer de bons coups (ex : répétition du même coup quelle que soit la position).</li>
+      <li><b>Format des réponses</b> : Difficile d’imposer systématiquement le format UCI, surtout sur les plus gros modèles réduits.</li>
+      <li><b>Tests manuels longs</b> : Pour ChatGPT-4o, les tests manuels étaient fastidieux et souvent décevants (beaucoup de coups légaux mais non pertinents).</li>
+    </ul>
+
+    <div class="callout">
+      <b>Conclusion : les petits modèles de chatbots LLM sont loin de rivaliser avec les moteurs spécialisés comme Stockfish. Les prompts et la taille du modèle restent déterminants !</b>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2020 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+
+</html>

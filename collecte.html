@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Collecte des données | Projet BE</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .main_collecte_section {
+      background: #fff;
+      max-width: 950px;
+      margin: 50px auto 40px auto;
+      border-radius: 22px;
+      box-shadow: 0 6px 32px rgba(40,50,100,0.11);
+      padding: 40px 36px 36px 36px;
+      position: relative;
+    }
+    .next-step-link {
+      display: block;
+      text-align: right;
+      margin-bottom: 52px; /* Espacement augmenté ! */
+    }
+    .next-step-link a {
+      background: #5c7cfa;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 1.09rem;
+      border-radius: 9px;
+      padding: 7px 19px;
+      text-decoration: none;
+      transition: background 0.15s;
+      box-shadow: 0 2px 8px rgba(100,110,220,0.07);
+      letter-spacing: 0.02em;
+    }
+    .next-step-link a:hover {
+      background: #2a43b6;
+      color: #fff;
+      text-decoration: none;
+    }
+    .main_collecte_section h1 {
+      text-align: center;
+      color: #222a4d;
+      font-size: 2.3rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .main_collecte_section h2 {
+      font-size: 1.45rem;
+      color: #3b3990;
+      margin-top: 32px;
+      font-weight: 600;
+    }
+    .main_collecte_section p, .main_collecte_section ul {
+      font-size: 1.13rem;
+      margin-top: 18px;
+      color: #2e2e2e;
+      line-height: 1.7;
+    }
+    .callout {
+      background: #f4f6fd;
+      border-left: 4px solid #597cf1;
+      padding: 16px 24px;
+      margin: 30px 0;
+      border-radius: 12px;
+      color: #23345b;
+      font-style: italic;
+    }
+    .main_collecte_section .example {
+      background: #f8fafd;
+      border: 1px solid #d7e3fa;
+      padding: 10px 18px;
+      border-radius: 7px;
+      margin: 15px 0 0 0;
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      font-size: 1rem;
+      color: #23345b;
+    }
+    @media (max-width: 768px) {
+      .main_collecte_section { padding: 14px 4vw; }
+      .main_collecte_section h1 { font-size: 1.4rem; }
+      .next-step-link { margin-bottom: 32px; }
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Projet BE
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Autres</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- Collecte des données content section -->
+  <section class="main_collecte_section">
+    <div class="next-step-link">
+      <a href="selection.html">Étape suivante &rarr;</a>
+    </div>
+    <h1>Collecte et sélection des problèmes d’échecs</h1>
+    <div class="callout">
+      <strong>Pour évaluer les modèles de manière fiable et pertinente, une base de problèmes d’échecs variés, adaptés et bien structurés s’imposait.</strong>
+    </div>
+    <p>
+      L’une des premières étapes du projet a consisté à sélectionner une base de problèmes d’échecs à la fois riche et diversifiée afin de garantir la fiabilité des résultats. L’équipe a choisi la base publique de puzzles proposée par le site <b>Lichess</b>, contenant plusieurs millions de positions déjà classées par niveau de difficulté (<b>Elo</b>). Chaque puzzle fournit la position de départ (sous format <b>FEN</b>), le ou les coups attendus, ainsi que des informations contextuelles telles que le thème ou un lien vers la partie d’origine.
+    </p>
+    <p>
+      Le format <b>CSV</b> de la base de données a permis une intégration directe dans Python grâce à la bibliothèque <code>pandas</code>, facilitant ainsi le traitement, la sélection et l’organisation des problèmes selon les besoins du projet.
+    </p>
+    <h2>Sélection automatisée et organisation des données</h2>
+    <p>
+      Pour constituer un échantillon représentatif, un script Python a été développé afin de tirer aléatoirement des problèmes selon leur niveau de difficulté (Facile, Moyen, Difficile, Avancé), cette difficulté étant déterminée en fonction de l’Elo, conformément aux références des principaux sites d’échecs.
+      <br>
+      Le script exporte alors chaque problème dans des fichiers texte organisés, contenant la description détaillée de la position (ex : « Roi noir en A2 »), la chaîne FEN, les coups attendus et le score Elo associé.
+    </p>
+    <p>
+      Ces fichiers structurés ont servi de base à l’évaluation des chatbots, permettant de tester leur performance sur une large palette de situations.
+    </p>
+    <h2>FEN&nbsp;: la référence pour décrire une position d’échecs</h2>
+    <p>
+      Le format <b>FEN</b> (Forsyth–Edwards Notation) est la norme utilisée pour décrire une position complète en une seule ligne de texte : il précise la disposition des pièces, le trait, les droits au roque, les prises en passant, etc.
+      <div class="example">Exemple FEN :<br>rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1</div>
+    </p>
+    <h2>Comprendre l’Elo</h2>
+    <p>
+      Le système Elo attribue à chaque joueur ou problème un score permettant d’estimer la difficulté ou le niveau d’un exercice. Plus l’Elo d’un puzzle est élevé, plus la résolution est complexe, ce qui a permis à l’équipe de répartir les problèmes en catégories et de mesurer l’adaptabilité des modèles sur tous les niveaux.
+    </p>
+    <h2>Critères d’évaluation des modèles</h2>
+    <p>
+      La définition des critères de test s’est appuyée sur une réflexion préalable autour de ce qui caractérise un bon joueur d’échecs, puis sur l’adaptation de ces critères au contexte d’une intelligence artificielle. Plutôt que de retenir uniquement des critères humains classiques (connaissance des ouvertures, profondeur d’analyse, etc.), deux aspects fondamentaux ont été privilégiés :
+    </p>
+    <ul>
+      <li><b>La précision des coups proposés par l’IA</b></li>
+      <li><b>La capacité d’analyse de la position</b></li>
+    </ul>
+    <p>
+      Ce travail de collecte et de préparation a permis de poser des bases solides pour une évaluation rigoureuse et objective des chatbots étudiés dans ce projet.
+    </p>
+  </section>
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2020 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+
+</html>
